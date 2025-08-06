@@ -297,8 +297,6 @@ if __name__ == "__main__":
     init_experiment(args, runner_name=['simgcd'])
     args.logger.info(f'Using evaluation function {args.eval_funcs[0]} to print results')
 
-    torch.backends.cudnn.benchmark = True
-
     # --------------------
     # DATASETS
     if args.dataset_name == "PaviaU":
